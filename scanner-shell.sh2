@@ -219,7 +219,7 @@ case $choice in
        echo -e "\x1B[1;31m                *** Current Target ARP List ***\x1B[0m"
 
        # Display the ARP list   
-       echo $home/data/hosts-arp.txt
+       cat $home/data/hosts-arp.txt
 
        echo $hr
        echo 
@@ -235,7 +235,7 @@ case $choice in
        echo -e "\x1B[1;31m                *** Current Target Ping List ***\x1B[0m"
 
        # Display the Ping List
-       echo $home/data/hosts-ping.txt
+       cat $home/data/hosts-ping.txt
 
        echo $hr
        echo
@@ -308,4 +308,3 @@ showMenu
 
 # Run Main Function
 main
-
